@@ -1,0 +1,96 @@
+\ProvidesPackage{readingnotestyle}
+%2:43 PM 9/Sept/2015 USTC Hefei Reading Notes 1.00
+
+\usepackage{graphicx}% Include figure files
+	\graphicspath{{img/}}
+% \loadgraphics{graphic.pdf}% after "graphicx" is "-psmin"
+\usepackage{grffile}% Distinguish the file extension after the last dot
+\usepackage{dcolumn}% Align table columns on decimal point
+%\usepackage{bm}% bold math
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+%\usepackage{bbm}
+\usepackage{epsfig}
+\usepackage[table]{xcolor}
+\usepackage{tabu}
+\usepackage[colorlinks=true,pdfencoding=auto,psdextra]{hyperref}%,hyperfootnotes=false
+\usepackage[paper=a4paper,height=23cm,width=17cm]{geometry}% papersize={8.5in,11in} a4paper
+\usepackage[hang,raggedright]{subfigure}
+\usepackage{CJK}
+\usepackage{amsthm}
+\usepackage{pifont}
+\usepackage{bbding}
+\usepackage{siunitx}
+\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+\usepackage[]{fourier}
+%\usepackage[utopia]{mathdesign}
+\usepackage{bm}
+%\usepackage[fulloldstylenums,fulloldstyle,lighttext]{kpfonts}%lighttext,narrowiints,partialup\
+%usepackage[varg,pxmia]{pxfonts}
+%\usepackage[math]{iwona}
+%\usepackage{txfonts}
+%\usepackage[math]{kurier}
+\usepackage{fancyhdr}
+\usepackage{datetime}
+\usepackage[]{pstricks}
+\usepackage{epigraph}
+\usepackage{url}
+\usepackage[toc,titletoc,header]{appendix}
+\usepackage{framed}
+\usepackage{braket}
+\usepackage[framemethod=PSTricks]{mdframed}
+	\mdfsetup{%
+		footnoteinside=false,
+		frametitlerule=true,
+		frametitlerulecolor=blue!50,
+		middlelinecolor=blue!50,
+		middlelinewidth=2pt,
+		backgroundcolor=cyan!10,
+		roundcorner=10pt,
+		nobreak=true}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage[perpage,symbol*,para,bottom]{footmisc}
+	\DefineFNsymbols*{b-circled}{{\ding{202}}{\ding{203}}{\ding{204}}{\ding{205}}{\ding{206}}{\ding{207}}{\ding{208}}{\ding{209}}{\ding{210}}{\ding{211}}}
+	\setfnsymbol{b-circled}
+\usepackage{todonotes}
+\usepackage{mathtools}
+\usepackage{paralist}
+\usepackage{tensor}
+\usepackage{slashed}
+\usepackage[force]{feynmp-auto}
+\usepackage{arydshln}
+\usepackage[version=4]{mhchem}
+%\usepackage{breqn}
+
+%\renewcommand{\rmdefault}{pplx}
+%\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\newcommand{\nont}{\nonumber\\ }
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\td}[2]{\frac{\md #1}{\md #2}}
+\newcommand{\vd}[2]{\frac{\mvd #1}{\mvd #2}}
+\newcommand{\ra}{\rightarrow} 
+\newcommand{\ua}{\uparrow}
+\newcommand{\da}{\downarrow}
+\newcommand{\me}{\textcolor{blue}{\mathrm{e}}}
+\newcommand{\mi}{\textcolor{orange}{\mathrm{i}}}
+\newcommand{\md}{\textcolor{purple}{\mathrm{d}}}
+\newcommand{\mD}{\textcolor{purple}{\mathrm{D}}}
+\newcommand{\mvd}{\textcolor{purple}{\otherdelta}}%\otherdelta for kpfonts
+\newcommand{\Tr}[2]{\mathrm{Tr}_{#1}\left\{#2\right\}}
+\newcommand{\Abs}[1]{\left|#1\right|}
+\newcommand{\abs}[1]{|#1|}
+\newcommand{\ceiling}[1]{\left\lceil #1 \right\rceil}
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+\newcommand{\WMMA}{\textcolor{red}{Wolfram} $ \mathit{Mathematica}^{\tiny{\circledR}}\ $}
+\newcommand{\itemcolor}[1]{% Update list item colour
+	\renewcommand{\makelabel}[1]{\color{#1}\hfil ##1}}
+	\renewcommand{\arraystretch}{1.5}
+
+\makeatletter
+\@addtoreset{chapter}{part} % reset the numbering of chapters for each part without mis-hyperreffed in the table of contents
+\makeatother
+\allowdisplaybreaks
